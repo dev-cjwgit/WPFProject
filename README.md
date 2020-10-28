@@ -1,5 +1,6 @@
 Ver 1.1 New Style
 
+Fade In, Out을 이용한 Window 애니메이션 효과
 Window Style = None의 Form ReSize 및 Minimize(Try Mode), Maximize Double Animation을 이용한 그래픽작업.
 Material Design + FlipView
 
