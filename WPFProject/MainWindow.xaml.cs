@@ -4,7 +4,8 @@ using System.Windows.Controls.Primitives;
 using System.Windows.Forms;
 using System.Windows.Input;
 using System.Windows.Media.Animation;
-
+using WPFProject.BindingModel;
+using WPFProject.WPFWindow;
 
 namespace WPFProject
 {
@@ -18,13 +19,16 @@ namespace WPFProject
         public MainWindow()
         {
             InitializeComponent();
-
+            ContentControl1.DataContext = ContentBindingModel.GetInstance();
         }
 
         #region Windows Form Events
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+            ContentBindingModel.GetInstance().Page = new Type_Select_Window();
+
+
             var anim = new DoubleAnimation(0, 1, (Duration)TimeSpan.FromSeconds(1));
             this.BeginAnimation(UIElement.OpacityProperty, anim);
         }
@@ -83,6 +87,22 @@ namespace WPFProject
         #endregion
 
         #region Windows Button Events
+
+        private void HomeButton1_Click(object sender, RoutedEventArgs e)
+        {
+            //DoubleAnimation anim1 = new DoubleAnimation(1, 0, (Duration)TimeSpan.FromSeconds(0.3));
+            //anim1.Completed += (s, _) =>
+            //{
+            //    ContentBindingModel.GetInstance().Page = new Type_Select_Window();
+
+            //};
+
+            //this.BeginAnimation(OpacityProperty, anim1);
+
+            ContentBindingModel.GetInstance().Page = new Type_Select_Window();
+
+        }
+
         private void WindowsMaximizeButton_Click(object sender, RoutedEventArgs e)
         {
             WindowState temp = (this.WindowState == WindowState.Normal ? WindowState.Maximized : WindowState.Normal);
@@ -149,8 +169,9 @@ namespace WPFProject
 
 
 
-        #endregion
 
+
+        #endregion
 
     }
 }

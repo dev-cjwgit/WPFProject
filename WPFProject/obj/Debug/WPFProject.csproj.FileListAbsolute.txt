@@ -48,8 +48,6 @@ C:\Users\user\Desktop\src\WPFProject\WPFProject\obj\Debug\MainWindow.g.cs
 C:\Users\user\Desktop\src\WPFProject\WPFProject\obj\Debug\WPFWindow\RankingTypeWindow\RankTypeOneWindow.g.cs
 C:\Users\user\Desktop\src\WPFProject\WPFProject\obj\Debug\WPFWindow\RankingTypeWindow\RankTypeThreeWindow.g.cs
 C:\Users\user\Desktop\src\WPFProject\WPFProject\obj\Debug\WPFWindow\RankingTypeWindow\RankTypeTowWindow.g.cs
-C:\Users\user\Desktop\src\WPFProject\WPFProject\obj\Debug\WPFWindow\Ranking_Window.g.cs
-C:\Users\user\Desktop\src\WPFProject\WPFProject\obj\Debug\WPFWindow\Type_Select_Window.g.cs
 C:\Users\user\Desktop\src\WPFProject\WPFProject\obj\Debug\App.g.cs
 C:\Users\user\Desktop\src\WPFProject\WPFProject\obj\Debug\GeneratedInternalTypeHelper.g.cs
 C:\Users\user\Desktop\src\WPFProject\WPFProject\obj\Debug\WPFProject_MarkupCompile.cache
@@ -58,8 +56,6 @@ C:\Users\user\Desktop\src\WPFProject\WPFProject\obj\Debug\MainWindow.baml
 C:\Users\user\Desktop\src\WPFProject\WPFProject\obj\Debug\WPFWindow\RankingTypeWindow\RankTypeOneWindow.baml
 C:\Users\user\Desktop\src\WPFProject\WPFProject\obj\Debug\WPFWindow\RankingTypeWindow\RankTypeThreeWindow.baml
 C:\Users\user\Desktop\src\WPFProject\WPFProject\obj\Debug\WPFWindow\RankingTypeWindow\RankTypeTowWindow.baml
-C:\Users\user\Desktop\src\WPFProject\WPFProject\obj\Debug\WPFWindow\Ranking_Window.baml
-C:\Users\user\Desktop\src\WPFProject\WPFProject\obj\Debug\WPFWindow\Type_Select_Window.baml
 C:\Users\user\Desktop\src\WPFProject\WPFProject\obj\Debug\WPFProject.g.resources
 C:\Users\user\Desktop\src\WPFProject\WPFProject\obj\Debug\WPFProject.Properties.Resources.resources
 C:\Users\user\Desktop\src\WPFProject\WPFProject\obj\Debug\WPFProject.csproj.GenerateResource.cache
@@ -67,3 +63,13 @@ C:\Users\user\Desktop\src\WPFProject\WPFProject\obj\Debug\WPFProject.csproj.Core
 C:\Users\user\Desktop\src\WPFProject\WPFProject\obj\Debug\WPFProject.csproj.CopyComplete
 C:\Users\user\Desktop\src\WPFProject\WPFProject\obj\Debug\WPFProject.exe
 C:\Users\user\Desktop\src\WPFProject\WPFProject\obj\Debug\WPFProject.pdb
+C:\Users\user\Desktop\src\WPFProject\WPFProject\obj\Debug\WPFWindow\MainWindow\Ranking_Window.g.cs
+C:\Users\user\Desktop\src\WPFProject\WPFProject\obj\Debug\WPFWindow\MainWindow\Type_Select_Window.g.cs
+C:\Users\user\Desktop\src\WPFProject\WPFProject\obj\Debug\WPFWindow\MainWindow\Ranking_Window.baml
+C:\Users\user\Desktop\src\WPFProject\WPFProject\obj\Debug\WPFWindow\MainWindow\Type_Select_Window.baml
+C:\Users\user\Desktop\src\WPFProject\WPFProject\obj\Debug\WPFWindow\SubWindow\GameOneWindow.g.cs
+C:\Users\user\Desktop\src\WPFProject\WPFProject\obj\Debug\WPFWindow\SubWindow\GameThreeWindow.g.cs
+C:\Users\user\Desktop\src\WPFProject\WPFProject\obj\Debug\WPFWindow\SubWindow\GameTwoWindow.g.cs
+C:\Users\user\Desktop\src\WPFProject\WPFProject\obj\Debug\WPFWindow\SubWindow\GameOneWindow.baml
+C:\Users\user\Desktop\src\WPFProject\WPFProject\obj\Debug\WPFWindow\SubWindow\GameThreeWindow.baml
+C:\Users\user\Desktop\src\WPFProject\WPFProject\obj\Debug\WPFWindow\SubWindow\GameTwoWindow.baml

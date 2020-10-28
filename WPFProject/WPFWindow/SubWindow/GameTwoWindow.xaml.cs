@@ -9,20 +9,23 @@ using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WPFProject.WPFWindow
+namespace WPFProject.WPFWindow.SubWindow
 {
     /// <summary>
-    /// Type_Select_Window.xaml에 대한 상호 작용 논리
+    /// GameTwoWindow.xaml에 대한 상호 작용 논리
     /// </summary>
-    public partial class Type_Select_Window : UserControl
+    public partial class GameTwoWindow : UserControl
     {
-        public Type_Select_Window()
+        public GameTwoWindow()
         {
             InitializeComponent();
+            var anim1 = new DoubleAnimation(0, 1, (Duration)TimeSpan.FromSeconds(0.3));
+            this.BeginAnimation(UIElement.OpacityProperty, anim1);
         }
     }
 }

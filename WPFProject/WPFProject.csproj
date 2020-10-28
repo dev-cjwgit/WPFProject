@@ -71,6 +71,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="BindingModel\ContentBindingModel.cs" />
     <Compile Include="WPFWindow\RankingTypeWindow\RankTypeOneWindow.xaml.cs">
       <DependentUpon>RankTypeOneWindow.xaml</DependentUpon>
     </Compile>
@@ -80,11 +81,20 @@
     <Compile Include="WPFWindow\RankingTypeWindow\RankTypeTowWindow.xaml.cs">
       <DependentUpon>RankTypeTowWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="WPFWindow\Ranking_Window.xaml.cs">
+    <Compile Include="WPFWindow\MainWindow\Ranking_Window.xaml.cs">
       <DependentUpon>Ranking_Window.xaml</DependentUpon>
     </Compile>
-    <Compile Include="WPFWindow\Type_Select_Window.xaml.cs">
+    <Compile Include="WPFWindow\MainWindow\Type_Select_Window.xaml.cs">
       <DependentUpon>Type_Select_Window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WPFWindow\SubWindow\GameOneWindow.xaml.cs">
+      <DependentUpon>GameOneWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WPFWindow\SubWindow\GameThreeWindow.xaml.cs">
+      <DependentUpon>GameThreeWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WPFWindow\SubWindow\GameTwoWindow.xaml.cs">
+      <DependentUpon>GameTwoWindow.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -110,11 +120,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="WPFWindow\Ranking_Window.xaml">
+    <Page Include="WPFWindow\MainWindow\Ranking_Window.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="WPFWindow\Type_Select_Window.xaml">
+    <Page Include="WPFWindow\MainWindow\Type_Select_Window.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WPFWindow\SubWindow\GameOneWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WPFWindow\SubWindow\GameThreeWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WPFWindow\SubWindow\GameTwoWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

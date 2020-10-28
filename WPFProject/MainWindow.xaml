@@ -60,6 +60,14 @@
                                            MouseLeftButtonDown="WindowsTitleBar_MouseLeftButtonDown"/>
                         </ContentControl>
 
+                        <Button x:Name="HomeButton1"
+                            Style="{StaticResource WindowsButtonStyle}"
+                            HorizontalAlignment="Left" Margin="5"
+                            Click="HomeButton1_Click"
+                            ToolTip="Home Button">
+                            <materialDesign:PackIcon Kind="Home"/>
+                        </Button>
+
                         <ToggleButton x:Name="ToggleButton1" Click="ToggleButton1_Click"
                                               HorizontalAlignment="Right" Margin="0,0,70,0"
                                               Background="Black" ToolTip="TopMost Setting"
@@ -94,7 +102,7 @@
 
                 <!-- Main View -->
                 <Grid Grid.Row="1">
-                    <wpfwindow:Type_Select_Window/>
+                    <ContentControl x:Name="ContentControl1" Content="{Binding Page}"/>
                 </Grid>
             </Grid>
         </Grid>

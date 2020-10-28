@@ -30,25 +30,25 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
             <Grid Grid.Column="0">
-                <Button Style="{StaticResource TypeButtonStyle}">
+                <Button  x:Name="Button1" Style="{StaticResource TypeButtonStyle}" MouseDoubleClick="Button1_MouseDoubleClick">
                     <Grid>
-                        <Image x:Name="Button1" Source="/Resources/Tablet_img.png"/>
+                        <Image Source="/Resources/Tablet_img.png"/>
                     </Grid>
                 </Button>
             </Grid>
 
             <Grid Grid.Column="1">
-                <Button Style="{StaticResource TypeButtonStyle}">
+                <Button x:Name="Button2" Style="{StaticResource TypeButtonStyle}" MouseDoubleClick="Button2_MouseDoubleClick">
                     <Grid>
-                        <Image x:Name="Button2" Source="/Resources/NoteBook_img.png"/>
+                        <Image  Source="/Resources/NoteBook_img.png"/>
                     </Grid>
                 </Button>
             </Grid>
 
             <Grid Grid.Column="2">
-                <Button Style="{StaticResource TypeButtonStyle}">
+                <Button x:Name="Button3" Style="{StaticResource TypeButtonStyle}" MouseDoubleClick="Button3_MouseDoubleClick">
                     <Grid>
-                        <Image x:Name="Button3" Source="/Resources/Computer_img.png"/>
+                        <Image  Source="/Resources/Computer_img.png"/>
                     </Grid>
                 </Button>
             </Grid>
