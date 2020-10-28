@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace WPFProject.WPFWindow
 {
     /// <summary>
-    /// Game_Selected_Window.xaml에 대한 상호 작용 논리
+    /// Type_Select_Window.xaml에 대한 상호 작용 논리
     /// </summary>
-    public partial class Game_Selected_Window : UserControl
+    public partial class Type_Select_Window : UserControl
     {
-        public Game_Selected_Window()
+        public Type_Select_Window()
         {
             InitializeComponent();
         }

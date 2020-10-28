@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\user\source\repos\WPFProject\WPFProject\obj\Debug\
+C:\Users\user\Desktop\src\WPFProject\WPFProject\obj\Debug\
 WPFProject
 none
 false
 DEBUG;TRACE
-C:\Users\user\source\repos\WPFProject\WPFProject\App.xaml
-6365353245
+C:\Users\user\Desktop\src\WPFProject\WPFProject\App.xaml
+6-938401543
 
-10-2029914494
-181654915538
-MainWindow.xaml;WPFWindow\Game_Selected_Window.xaml;WPFWindow\RankingTypeWindow\RankTypeOneWindow.xaml;WPFWindow\RankingTypeWindow\RankTypeThreeWindow.xaml;WPFWindow\RankingTypeWindow\RankTypeTowWindow.xaml;WPFWindow\Ranking_Window.xaml;
+101853687531
+182104846820
+MainWindow.xaml;WPFWindow\RankingTypeWindow\RankTypeOneWindow.xaml;WPFWindow\RankingTypeWindow\RankTypeThreeWindow.xaml;WPFWindow\RankingTypeWindow\RankTypeTowWindow.xaml;WPFWindow\Ranking_Window.xaml;WPFWindow\Type_Select_Window.xaml;
 
 False
 

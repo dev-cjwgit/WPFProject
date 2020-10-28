@@ -4,8 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-        xmlns:local="clr-namespace:WPFProject"
-        xmlns:gu="https://github.com/JohanLarsson/Gu.Wpf.FlipView" xmlns:wpfwindow="clr-namespace:WPFProject.WPFWindow"
+        xmlns:wpfwindow="clr-namespace:WPFProject.WPFWindow"
         mc:Ignorable="d"
         Title="MainWindow"
         WindowStyle="None" Background="Transparent" WindowStartupLocation="CenterScreen"
@@ -40,7 +39,7 @@
                             <TextBlock Margin="10">Game Ranking by koreatech</TextBlock>
                         </Viewbox>
                     </Grid>
-                    
+
                     <!-- Rank List View -->
                     <Grid Grid.Row="1">
                         <wpfwindow:Ranking_Window/>
@@ -92,10 +91,10 @@
                         </Button>
                     </Grid>
                 </Border>
-                
+
                 <!-- Main View -->
                 <Grid Grid.Row="1">
-                    
+                    <wpfwindow:Type_Select_Window/>
                 </Grid>
             </Grid>
         </Grid>
