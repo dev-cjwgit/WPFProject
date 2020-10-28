@@ -1,3 +1,5 @@
+Ver 1.1
+
 Window Style = None의 Form ReSize 및 Minimize(Try Mode), Maximize Double Animation을 이용한 그래픽작업.
 Material Design + FlipView
 
