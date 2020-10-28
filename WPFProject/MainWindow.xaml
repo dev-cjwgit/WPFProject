@@ -1,0 +1,103 @@
+﻿<Window x:Class="WPFProject.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:WPFProject"
+        xmlns:gu="https://github.com/JohanLarsson/Gu.Wpf.FlipView" xmlns:wpfwindow="clr-namespace:WPFProject.WPFWindow"
+        mc:Ignorable="d"
+        Title="MainWindow"
+        WindowStyle="None" Background="Transparent" WindowStartupLocation="CenterScreen"
+        AllowsTransparency="True" ShowInTaskbar="False"
+        ResizeMode="CanResizeWithGrip"
+        Loaded="Window_Loaded" Closing="Window_Closing"
+        Activated="Window_Activated" SizeChanged="Window_SizeChanged"
+        MinHeight="400" MinWidth="900"
+        Height="450" Width="900">
+    <Window.Resources>
+        <Style x:Key="WindowsButtonStyle" TargetType="Button" BasedOn="{StaticResource BasedWindowButtonsStyle}">
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="HorizontalAlignment" Value="Right"/>
+        </Style>
+    </Window.Resources>
+
+    <Border CornerRadius="2.5" Background="White" BorderBrush="Gray" BorderThickness="1.3">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="300"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <!-- Left Menu Grid -->
+            <Border Grid.Column="0" BorderThickness="0,0,1,0" BorderBrush="Black">
+                <Grid Background="AliceBlue" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="2*"/>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0">
+                        <Viewbox>
+                            <TextBlock Margin="10">Game Ranking by koreatech</TextBlock>
+                        </Viewbox>
+                    </Grid>
+                    
+                    <!-- Rank List View -->
+                    <Grid Grid.Row="1">
+                        <wpfwindow:Ranking_Window/>
+                    </Grid>
+                </Grid>
+            </Border>
+
+            <Grid Grid.Column="1" Background="WhiteSmoke">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <!-- Windows TitleBar Style Grid.Row="0" -->
+                <Border Grid.Column="1" BorderThickness="0,0,0,1" BorderBrush="Black">
+                    <Grid Grid.Row="0">
+                        <ContentControl MouseDoubleClick="WindowsMaximizeButton_Click">
+                            <Rectangle Name="titlebar" Fill="Transparent" Width="auto" Height="auto"  ClipToBounds="True"
+                                           MouseLeftButtonDown="WindowsTitleBar_MouseLeftButtonDown"/>
+                        </ContentControl>
+
+                        <ToggleButton x:Name="ToggleButton1" Click="ToggleButton1_Click"
+                                              HorizontalAlignment="Right" Margin="0,0,70,0"
+                                              Background="Black" ToolTip="TopMost Setting"
+                                              Width="40" Height="20">
+                        </ToggleButton>
+
+                        <Button x:Name="WindowsMinimizeButton"
+                                    Style="{StaticResource WindowsButtonStyle}"
+                                    Click="WindowsMinimizeButton_Click"
+                                    Width="20" Height="20" Margin="0,0,45,0"
+                                    ToolTip="Minimize App Button">
+                            <materialDesign:PackIcon Kind="WindowMinimize"/>
+                        </Button>
+
+                        <Button x:Name="WindowsMaximizeButton"
+                                    Style="{StaticResource WindowsButtonStyle}"
+                                    Click="WindowsMaximizeButton_Click"
+                                    Width="20" Height="20" Margin="0,0,25,0"
+                                    ToolTip="Maximize App Button">
+                            <materialDesign:PackIcon Kind="WindowMaximize"/>
+                        </Button>
+
+                        <Button x:Name="WindowsCloseButton"
+                                    Style="{StaticResource WindowsButtonStyle}"
+                                    Click="WindowsCloseButton_Click"
+                                    Width="20" Height="20" Margin="0,0,5,0"
+                                    ToolTip="Close App Button">
+                            <materialDesign:PackIcon Kind="Close"/>
+                        </Button>
+                    </Grid>
+                </Border>
+                
+                <!-- Main View -->
+                <Grid Grid.Row="1">
+                    
+                </Grid>
+            </Grid>
+        </Grid>
+    </Border>
+</Window>

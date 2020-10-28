@@ -1,0 +1,77 @@
+﻿<UserControl x:Class="WPFProject.WPFWindow.RankingTypeWindow.RankTypeTowWindow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WPFProject.WPFWindow.RankingTypeWindow"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="4*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <!-- Ranking Sort -->
+        <Grid Grid.Row="0" Grid.Column="0" Margin="10">
+            <Viewbox>
+                <TextBlock>S</TextBlock>
+            </Viewbox>
+        </Grid>
+
+        <Grid Grid.Row="1" Grid.Column="0" Margin="10">
+            <Viewbox>
+                <TextBlock>A</TextBlock>
+            </Viewbox>
+        </Grid>
+
+        <Grid Grid.Row="2" Grid.Column="0" Margin="10">
+            <Viewbox>
+                <TextBlock>B</TextBlock>
+            </Viewbox>
+        </Grid>
+
+        <!-- Name -->
+        <Grid Grid.Row="0" Grid.Column="1" Margin="10">
+            <Viewbox>
+                <TextBlock>최진우1</TextBlock>
+            </Viewbox>
+        </Grid>
+
+        <Grid Grid.Row="1" Grid.Column="1" Margin="10">
+            <Viewbox>
+                <TextBlock>최진우2</TextBlock>
+            </Viewbox>
+        </Grid>
+
+        <Grid Grid.Row="2" Grid.Column="1" Margin="10">
+            <Viewbox>
+                <TextBlock>최진우3</TextBlock>
+            </Viewbox>
+        </Grid>
+
+        <!-- Timer -->
+        <Grid Grid.Row="0" Grid.Column="2" Margin="10">
+            <Viewbox>
+                <TextBlock>00:00:00</TextBlock>
+            </Viewbox>
+        </Grid>
+
+        <Grid Grid.Row="1" Grid.Column="2" Margin="10">
+            <Viewbox>
+                <TextBlock>00:00:00</TextBlock>
+            </Viewbox>
+        </Grid>
+
+        <Grid Grid.Row="2" Grid.Column="2" Margin="10">
+            <Viewbox>
+                <TextBlock>00:00:00</TextBlock>
+            </Viewbox>
+        </Grid>
+    </Grid>
+</UserControl>

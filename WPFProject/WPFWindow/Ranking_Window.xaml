@@ -1,0 +1,39 @@
+﻿<UserControl x:Class="WPFProject.WPFWindow.Ranking_Window"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WPFProject.WPFWindow"
+             xmlns:gu="https://github.com/JohanLarsson/Gu.Wpf.FlipView"
+             xmlns:rankingtypewindow="clr-namespace:WPFProject.WPFWindow.RankingTypeWindow"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <Style x:Key="TargetButtonStyle" TargetType="RepeatButton">
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderBrush" Value="Transparent"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Margin" Value="10"/>
+        </Style>
+    </UserControl.Resources>
+    
+    <Grid>
+        <gu:FlipView SelectedIndex="0" ShowArrows="False" ArrowButtonStyle="{StaticResource TargetButtonStyle}">
+            
+            <Grid Margin="10">
+                <rankingtypewindow:RankTypeOneWindow />
+            </Grid>
+            
+            
+            <Grid  Margin="10">
+                <rankingtypewindow:RankTypeTowWindow/>
+            </Grid>
+
+            <Grid  Margin="10">
+                <rankingtypewindow:RankTypeThreeWindow/>
+            </Grid>
+        </gu:FlipView>
+    </Grid>
+</UserControl>
