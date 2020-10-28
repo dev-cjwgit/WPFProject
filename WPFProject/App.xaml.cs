@@ -19,7 +19,7 @@ namespace WPFProject
         {
             if (runOneApp.CreateOnlyOneMutex(null) == false)
             {
-                MessageBox.Show("이미 프로그램이 실행중입니다.\r\n잠시후 다시 시도해주세요.", "SWCS Sticky Note", MessageBoxButton.OK);
+                MessageBox.Show("이미 프로그램이 실행중입니다.\r\n잠시후 다시 시도해주세요.", "WPF Program", MessageBoxButton.OK);
                 Environment.Exit(0);
                 return;
             }
