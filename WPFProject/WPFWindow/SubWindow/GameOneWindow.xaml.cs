@@ -26,7 +26,6 @@ namespace WPFProject.WPFWindow.SubWindow
             InitializeComponent();
             var anim1 = new DoubleAnimation(0, 1, (Duration)TimeSpan.FromSeconds(0.3));
             this.BeginAnimation(OpacityProperty, anim1);
-            
         }
 
     }

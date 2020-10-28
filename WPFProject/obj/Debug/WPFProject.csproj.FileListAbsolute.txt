@@ -73,3 +73,4 @@ C:\Users\user\Desktop\src\WPFProject\WPFProject\obj\Debug\WPFWindow\SubWindow\Ga
 C:\Users\user\Desktop\src\WPFProject\WPFProject\obj\Debug\WPFWindow\SubWindow\GameOneWindow.baml
 C:\Users\user\Desktop\src\WPFProject\WPFProject\obj\Debug\WPFWindow\SubWindow\GameThreeWindow.baml
 C:\Users\user\Desktop\src\WPFProject\WPFProject\obj\Debug\WPFWindow\SubWindow\GameTwoWindow.baml
+C:\Users\user\Desktop\src\WPFProject\WPFProject\obj\Debug\WPFProject.csprojAssemblyReference.cache

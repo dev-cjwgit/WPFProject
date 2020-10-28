@@ -36,7 +36,7 @@
                     </Grid.RowDefinitions>
                     <Grid Grid.Row="0">
                         <Viewbox>
-                            <TextBlock Margin="10">Game Ranking by koreatech</TextBlock>
+                            <TextBlock Margin="10">Game Ranking By Koreatech</TextBlock>
                         </Viewbox>
                     </Grid>
 

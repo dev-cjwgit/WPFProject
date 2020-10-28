@@ -11,3 +11,5 @@ gu:FlipView(https://github.com/GuOrg/Gu.Wpf.FlipView#arrowbuttonstyle) 의 간�
 image button 추가.
 UserControl Change시, Fade IN, Fade Out Effect.
 (Bug : Home Button 시 DoubleAnimation으론 해당 UIElement를 받아올 수 없어서 일단 보류)
+
+Metex와 appGuid를 이용하여 중복실행을 방지함.

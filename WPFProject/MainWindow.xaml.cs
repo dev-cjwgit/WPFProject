@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 using System.Windows;
 using System.Windows.Controls.Primitives;
 using System.Windows.Forms;
@@ -98,7 +99,7 @@ namespace WPFProject
             //};
 
             //this.BeginAnimation(OpacityProperty, anim1);
-
+ 
             ContentBindingModel.GetInstance().Page = new Type_Select_Window();
 
         }

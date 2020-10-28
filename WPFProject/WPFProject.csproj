@@ -72,6 +72,8 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="BindingModel\ContentBindingModel.cs" />
+    <Compile Include="RunOneInstance.cs" />
+    <Compile Include="TaskbarIcon.cs" />
     <Compile Include="WPFWindow\RankingTypeWindow\RankTypeOneWindow.xaml.cs">
       <DependentUpon>RankTypeOneWindow.xaml</DependentUpon>
     </Compile>
