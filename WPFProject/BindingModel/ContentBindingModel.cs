@@ -10,7 +10,19 @@ using System.Windows.Controls;
 
 namespace WPFProject.BindingModel
 {
-    public class ContentBindingModel : INotifyPropertyChanged
+    public class NotifyPropertyChanged : INotifyPropertyChanged
+    {
+        #region PropertyChanged
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+        #endregion
+    }
+
+    public class ContentBindingModel : NotifyPropertyChanged
     {
         private UserControl _page;
         public UserControl Page
@@ -35,16 +47,5 @@ namespace WPFProject.BindingModel
 
             return instance;
         }
-
-
-        #region PropertyChanged
-        public event PropertyChangedEventHandler PropertyChanged;
-
-
-        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
-        #endregion
     }
 }

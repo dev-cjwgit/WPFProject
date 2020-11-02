@@ -12,9 +12,11 @@
         ResizeMode="CanResizeWithGrip"
         Loaded="Window_Loaded" Closing="Window_Closing"
         Activated="Window_Activated" SizeChanged="Window_SizeChanged"
+        SnapsToDevicePixels="True"
         MinHeight="400" MinWidth="900"
         Height="450" Width="900">
     <Window.Resources>
+        <!-- BasedOn { App.xaml } -->
         <Style x:Key="WindowsButtonStyle" TargetType="Button" BasedOn="{StaticResource BasedWindowButtonsStyle}">
             <Setter Property="VerticalAlignment" Value="Center"/>
             <Setter Property="HorizontalAlignment" Value="Right"/>
@@ -52,6 +54,7 @@
                     <RowDefinition Height="30"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
+                
                 <!-- Windows TitleBar Style Grid.Row="0" -->
                 <Border Grid.Column="1" BorderThickness="0,0,0,1" BorderBrush="Black">
                     <Grid Grid.Row="0">
@@ -102,7 +105,9 @@
 
                 <!-- Main View -->
                 <Grid Grid.Row="1">
-                    <ContentControl x:Name="ContentControl1" Content="{Binding Page}"/>
+                    <!-- Binding { BindingModel/ContentBindingModel.cs } -->
+                    <!-- DataContext Binding : { MainWindow.xaml.cs - Constructor() } -->
+                    <ContentControl x:Name="ContentControl1" Content="{Binding Page, NotifyOnTargetUpdated=True}" TargetUpdated="ContentControl1_TargetUpdated"/>
                 </Grid>
             </Grid>
         </Grid>

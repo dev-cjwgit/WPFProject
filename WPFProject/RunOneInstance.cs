@@ -17,8 +17,6 @@ namespace WPFProject
 
         public bool CreateOnlyOneMutex(string mutexName)
         {
-            bool canCreateNewMutex = false;
-
             // Application GUID 를 이용해서 Mutext 고유한 이름을 만든다.
             var assembly = typeof(GuidAttribute).Assembly;
             var attribute = (GuidAttribute)assembly.GetCustomAttributes(typeof(GuidAttribute), true)[0];
@@ -37,6 +35,7 @@ namespace WPFProject
             securitySettings.AddAccessRule(allowEveryoneRule);
 
 
+            bool canCreateNewMutex;
             //보안 속성을 추가해서 mutex를 생성한다.
             //public Mutex(bool initiallyOwned, string name, out bool createdNew, MutexSecurity       
             //mutexSecurity);

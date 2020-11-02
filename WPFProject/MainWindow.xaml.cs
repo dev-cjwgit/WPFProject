@@ -174,5 +174,17 @@ namespace WPFProject
 
         #endregion
 
+        private void ContentControl1_TargetUpdated(object sender, System.Windows.Data.DataTransferEventArgs e)
+        {
+            var anim = new DoubleAnimation(0, (Duration)TimeSpan.FromSeconds(0.3));
+            //anim.Completed += (s, _) =>
+            //{
+            //    this.WindowState = WindowState.Minimized;
+            //    TrayInit();
+
+            //};
+
+            this.BeginAnimation(UIElement.OpacityProperty, anim);
+        }
     }
 }
